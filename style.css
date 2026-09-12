@@ -1,0 +1,234 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:wght@400;500&family=Karla:wght@400;70display=swap');
+
+* {
+  padding:0;
+  margin:0;
+  box-sizing:border-box;
+}
+
+:root {
+- Blue 950: hsl(256, 26%, 20%)
+- Blue 500: hsl(216, 30%, 68%)
+- Gray 950: hsl(270, 9%, 17%)
+- Gray 700: hsl(273, 4%, 51%)
+- Gray 50: hsl(0, 0%, 98%)
+}
+body {
+  font-family: "DM Serif Display", serif;
+   font-family: Arial, sans-serif;
+
+}
+
+.header {
+  width:100%;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  padding:24px;
+  position: relative;
+}
+
+.logo {
+  width:112px;
+}
+
+.menu-btn {
+  background:none;
+  border:none;
+  cursor:pointer;
+  width:24px;
+}
+
+.intro {
+  display:flex;
+  flex-direction:column;
+}
+
+.intro-image {
+  width:100%;
+  display:block;
+}
+
+.intro-content {
+  position: relative;
+  overflow: visible;
+  background:#2d2640;
+  color:white;
+  text-align:center;
+  padding:72px 24px;
+  background-image:
+    url("bg-pattern-intro-left-mobile.svg");
+  background-repeat: no-repeat;
+  background-position:
+    left top;
+}
+
+.intro-pattern-right {
+  position: absolute;
+  right: 0;
+  bottom: -150px;
+}
+
+.intro-content h1 {
+  font-size:38px;
+  font-weight:500;
+  line-height:1.1;
+  margin-bottom:24px;
+  font-family: "DM Serif Display", serif;
+}
+
+.intro-content p {
+  font-size:16px;
+  opacity:0.8;
+  font-family: "Arial", sans-serif;
+line-height:1.6;
+margin-bottom:32px;
+}
+
+.btn {
+  display: inline-block;
+  color: white;
+  border: 1.4px solid white;
+  padding: 12px 24px;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 13px;
+  letter-spacing: 1px;
+}
+
+.features {
+  text-align: center;
+  padding: 140px 24px 72px;
+}
+
+.features h2 {
+  color: #2d2640;
+  font-size: 35px;
+  font-family: "DM Serif Display", serif;
+  margin-bottom: 60px;
+}
+
+.feature-card img {
+  width:70px;
+  margin-bottom:25px;
+}
+
+.feature-card h3 {
+  font-size:25px;
+  font-family: "DM Serif Display", serif;
+  margin-bottom:24px;
+}
+
+.feature-card p {
+  line-height:1.6;
+  font-size:16px;
+  opacity:0.4;
+  font-family: "Arial", sans-serif;
+  font-weight:500;
+  margin-bottom:60px;
+}
+
+.about {
+  margin:0 24px 140px;
+  padding:72px 24px;
+  background:#2d2640;
+  background-image:url("bg-pattern-how-we-work-mobile.svg");
+  background-repeat:no-repeat;
+  background-position:right top;
+  color:white;
+  text-align:center;
+  font-family: "DM Serif Display", serif;
+}
+
+.about h2 {
+  font-size:32px;
+  line-height:1.2;
+  margin-bottom:32px;
+}
+
+
+.footer {
+  background:#f0f0f0;
+  text-align:center;
+  padding:72px 24px;
+  background-image: url("bg-pattern-footer-mobile.svg");
+background-repeat: no-repeat;
+background-position: center top;
+}
+
+.footer-logo {
+  width:112px;
+  margin-bottom:24px;
+  
+  
+}
+
+.social-links {
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  gap:16px;
+  margin-bottom:40px;
+}
+
+.social-links img {
+  width:24px;
+}
+
+.footer-links {
+  border-top: 1px solid #ddd;
+  padding-top: 35px;
+}
+
+.footer-links > div {
+  margin-bottom:36px;
+}
+
+.footer-links h4 {
+  color:#837d88;
+  font-size:16px;
+  margin-bottom:26px;
+  letter-spacing: 1px;
+}
+
+.footer-links a {
+display:block;
+color:#2d2640;
+font-size:14px;
+font-weight:bold;
+text-decoration:none;
+margin-bottom:18px;
+letter-spacing:1.2px;
+}
+
+
+
+.mobile-menu {
+  display:none;
+  gap:20px;
+}
+
+.mobile-menu.active {
+  display:flex;
+  flex-direction:column;
+  width:100%;
+  padding:30px;
+  position:absolute;
+  top:70px;
+  left:0;
+  background: #2d2640;
+}
+
+.mobile-menu a {
+  color: white;
+  text-decoration: none;
+}
+
+.mobile-menu a.clicked {
+  color: #837d88;
+  transform: scale(0.95);
+}
+
+html {
+  scroll-behavior:smooth;
+}
